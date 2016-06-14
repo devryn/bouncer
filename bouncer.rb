@@ -11,20 +11,18 @@
   # if yes, can rent car
 
 def check_age
-  puts "What is your age?"
+  puts "What is your age? Press 0 to exit."
   age = gets.chomp.to_i
 
     if age < 18
       puts "I can do nothing."
     elsif age >= 18
       puts "I can vote and I can smoke."
-    end
-    if age >= 21
+    elsif age >= 21
       puts "I can drink."
-    end
-    if age >= 25
+  elsif age >= 25
       puts "I can rent a car."
     end
   end
 
-check_age
+  check_age
